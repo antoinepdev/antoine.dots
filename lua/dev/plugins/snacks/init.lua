@@ -6,7 +6,7 @@ return {
   opts = {
     dashboard = require("dev.plugins.snacks.dashboard"),
     indent = { enabled = true },
-    --input = { enabled = true },
+    input = { enabled = true },
     bigfile = { enabled = true },
     explorer = { enabled = true },
     notifier = { enabled = false, timeout = 3000 },
