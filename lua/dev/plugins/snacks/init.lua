@@ -10,7 +10,7 @@ return {
     bigfile = { enabled = true },
     explorer = { enabled = true },
     notifier = { enabled = false, timeout = 3000 },
-    picker = { enabled = true, exclude = {"node_modules", "package-lock.json"} },
+    picker = { enabled = true, exclude = {"node_modules", "package-lock.json", "lazy-lock.json"} },
     quickfile = { enabled = true },
     scope = { enabled = true },
     scroll = { enabled = true },
