@@ -34,9 +34,11 @@ map("t", "<Esc>", "<C-\\><C-n>", "Exit terminal mode")
 map("t", "jk", "<C-\\><C-n>", "Exit terminal mode with jk")
 
 -- Buffers
-map("n", "<leader>bd", ":bd<CR>", "Close current buffer")
 map("n", "<leader><Tab>", ":bnext<CR>", "Go next buffer")
 map("n", "<leader>º", ":bprevious<CR>", "Go previous buffer")
+
+-- Tabs
+map("n", "<leader>bn", ":tabnew<CR>", "New tab")
 
 -- Splits
 map("n", "<C-h>", "<C-w>h", "Move to left window")
