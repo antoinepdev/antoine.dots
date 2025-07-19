@@ -9,14 +9,16 @@ return {
     "hrsh7th/cmp-git", -- source for git
     "L3MON4D3/LuaSnip", -- snippets
     "saadparwaiz1/cmp_luasnip", -- for autocompletion
-    -- "onsails/lspkind.nvim", -- vs-code like pictograms
+    "onsails/lspkind.nvim", -- vs-code like pictograms
     "windwp/nvim-autopairs",
+    --"rafamadriz/friendly-snippets",
   },
 
   config = function ()
     local cmp = require("cmp")
     local luasnip = require("luasnip")
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+    local lspkind = require("lspkind")
 
     cmp.setup({
       snippet = {
@@ -55,10 +57,15 @@ return {
       sources = {
         { name = "nvim_lsp" },
         { name = "path" },
-        { name = "luasnip" },
         { name = "buffer" },
+        { name = "luasnip" },
       },
+      formatting = {
+        format = lspkind.cmp_format({ with_text = false, maxwidth = 50 })
+      }
     })
+
+    -- require("luasnip.loaders.from_vscode").load {}
 
     cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done { map_char = { tex = "" } })
 
