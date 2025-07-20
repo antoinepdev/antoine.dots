@@ -29,13 +29,9 @@ map("i", "jk", "<ESC>", "Exit insert mode with jk")
 map("n", "<leader>nh", ":nohl<CR>", "Clear search highlights")
 
 -- Terminal
-map("n", "<leader>t", "<cmd>enew<CR><cmd>term<CR>i", "Open new terminal")
+map("n", "<leader>t", "<cmd>tabnew<CR><cmd>term<CR>i", "Open new terminal")
 map("t", "<Esc>", "<C-\\><C-n>", "Exit terminal mode")
 map("t", "jk", "<C-\\><C-n>", "Exit terminal mode with jk")
-
--- Buffers
-map("n", "<leader><Tab>", ":bnext<CR>", "Go next buffer")
-map("n", "<leader>º", ":bprevious<CR>", "Go previous buffer")
 
 -- Tabs
 map("n", "<leader>bn", ":tabnew<CR>", "New tab")
