@@ -21,7 +21,7 @@ Currently a minimal setup. More features and modules will be added incrementally
 ## 🛠 Requirements
 
 * Linux system
-* Neovim >= 0.9.0
+* Neovim >= 0.11.3
 
 ## 📌 Notes
 
