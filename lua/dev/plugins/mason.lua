@@ -31,6 +31,7 @@ return {
         "cssls",
         "tailwindcss",
         "ts_ls",
+        "jsonls",
       },
     })
   end,
