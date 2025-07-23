@@ -11,7 +11,7 @@ return {
     "saadparwaiz1/cmp_luasnip", -- for autocompletion
     "onsails/lspkind.nvim", -- vs-code like pictograms
     "windwp/nvim-autopairs",
-    --"rafamadriz/friendly-snippets",
+    "rafamadriz/friendly-snippets",
   },
 
   config = function ()
@@ -65,7 +65,7 @@ return {
       }
     })
 
-    -- require("luasnip.loaders.from_vscode").load {}
+    require("luasnip.loaders.from_vscode").load {}
 
     cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done { map_char = { tex = "" } })
 
